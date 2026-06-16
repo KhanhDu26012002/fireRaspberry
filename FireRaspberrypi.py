@@ -5,7 +5,7 @@ from ultralytics import YOLO
 model = YOLO('best4.pt')
 
 # Sử dụng camera của Raspberry Pi
-cap = cv2.VideoCapture(0)  # 0 là chỉ số của camera mặc định
+cap = cv2.VideoCapture("D://video") #mo video cv2  
 
 if not cap.isOpened():
     print("Error: Could not open camera.")
